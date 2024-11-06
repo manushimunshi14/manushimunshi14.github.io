@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info h1 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #0066cc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1.5em;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.education-item, .experience-item, .project-item {
+    margin-bottom: 20px;
+}
+
+.header-line, .subheader-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.main-text {
+    font-weight: bold;
+    color: #2c3e50;
+    flex: 1;
+}
+
+.subheader-line .main-text {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.duration {
+    color: #666;
+    text-align: right;
+    min-width: 180px;
+    margin-left: 20px;
+}
+
+.secondary-text {
+    color: #666;
+    text-align: right;
+    min-width: 180px;
+    margin-left: 20px;
+}
+
+.details {
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.skills-list {
+    list-style-type: none;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+}
+
+.bullet-points {
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-top: 8px;
+}
+
+.bullet-points li {
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.bullet-points a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.bullet-points a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-line, .subheader-line {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .duration, .secondary-text {
+        margin-top: 5px;
+        margin-left: 0;
+        min-width: auto;
+    }
+
+    .contact-info a {
+        display: block;
+        margin: 5px 0;
+    }
+}
